@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique — Mode & Accessoires de Qualité</title>
+  <meta name="description" content="Découvrez notre sélection de vêtements, accessoires et montres de qualité. Des pièces choisies avec soin pour un style intemporel.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Boutique — Mode & Accessoires de Qualité">
+  <meta property="og:description" content="Des pièces choisies avec soin pour un style intemporel.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Boutique — Accueil">Bou<span>tique</span></a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="cart.html">Panier</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Voir le panier">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Panier
+          <span class="cart-count hidden" id="cart-count" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Bannière principale">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Nouvelle collection</p>
+      <h1>L'élégance<br>sans <em>compromis</em></h1>
+      <p>Des pièces choisies pour leur matière, leur fabrication et leur durabilité. Achetez moins, achetez mieux.</p>
+      <a href="products.html" class="hero-cta" aria-label="Découvrir tous les produits">
+        Découvrir la collection
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <main>
+    <section class="section" aria-labelledby="featured-title">
+      <div class="section-header">
+        <h2 class="section-title" id="featured-title">Sélection <em>du moment</em></h2>
+        <a href="products.html" class="section-link" aria-label="Voir tous les produits">Tout voir →</a>
+      </div>
+      <div class="product-grid" id="featured-grid" aria-label="Produits en vedette">
+        <!-- Injected by app.js -->
+        <div class="product-card" aria-busy="true">
+          <div class="card-image-wrap skeleton" style="height:200px"></div>
+          <div class="card-body">
+            <div class="skeleton" style="height:12px;width:60%;margin-bottom:10px"></div>
+            <div class="skeleton" style="height:20px;width:80%;margin-bottom:16px"></div>
+            <div class="skeleton" style="height:36px"></div>
+          </div>
+        </div>
+        <div class="product-card" aria-busy="true">
+          <div class="card-image-wrap skeleton" style="height:200px"></div>
+          <div class="card-body">
+            <div class="skeleton" style="height:12px;width:60%;margin-bottom:10px"></div>
+            <div class="skeleton" style="height:20px;width:80%;margin-bottom:16px"></div>
+            <div class="skeleton" style="height:36px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPS -->
+    <section class="section" style="background:var(--white);padding:48px 24px" aria-label="Nos engagements">
+      <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;text-align:center">
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:12px" aria-hidden="true">🚚</div>
+          <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;margin-bottom:6px">Livraison offerte</h3>
+          <p style="font-size:0.83rem;color:var(--stone)">Dès 150 € d'achat en France métropolitaine</p>
+        </div>
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:12px" aria-hidden="true">↩️</div>
+          <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;margin-bottom:6px">Retours 30 jours</h3>
+          <p style="font-size:0.83rem;color:var(--stone)">Pas satisfait ? On reprend sans question.</p>
+        </div>
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:12px" aria-hidden="true">🔒</div>
+          <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;margin-bottom:6px">Paiement sécurisé</h3>
+          <p style="font-size:0.83rem;color:var(--stone)">Transactions chiffrées SSL 256 bits</p>
+        </div>
+        <div>
+          <div style="font-size:1.8rem;margin-bottom:12px" aria-hidden="true">✦</div>
+          <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;margin-bottom:6px">Sélection curatée</h3>
+          <p style="font-size:0.83rem;color:var(--stone)">Chaque pièce est testée avant d'être proposée</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="logo">Bou<span>tique</span></p>
+          <p>Une sélection rigoureuse de pièces mode et accessoires pour ceux qui refusent le superflu.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="cart.html">Mon panier</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="#">Livraison & retours</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Boutique. Tous droits réservés.</p>
+        <p style="font-size:0.72rem;color:var(--stone)">Fait avec soin ✦</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

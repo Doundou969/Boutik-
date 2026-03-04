@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "titre": "Veste en Cuir Milano",
+    "prix": 249.99,
+    "image": "https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Veste+Milano",
+    "description": "Une veste en cuir véritable taillée à Milan. Coupe ajustée, doublure en soie, finitions à la main. Portez-la avec tout, des jeans aux pantalons de costume.",
+    "categorie": "Vêtements"
+  },
+  {
+    "id": 2,
+    "titre": "Sac Cabas Toscan",
+    "prix": 189.00,
+    "image": "https://via.placeholder.com/400x300/2d4a3e/ffffff?text=Sac+Toscan",
+    "description": "Cuir pleine fleur tanné végétal. Spacieux, solide, élégant. Idéal pour le bureau ou les voyages du week-end. Poignées en corde tressée.",
+    "categorie": "Accessoires"
+  },
+  {
+    "id": 3,
+    "titre": "Montre Arcane Automatique",
+    "prix": 425.00,
+    "image": "https://via.placeholder.com/400x300/2c1654/ffffff?text=Montre+Arcane",
+    "description": "Mouvement automatique suisse. Boîtier en acier brossé 40mm. Cadran ardoise avec index dorés. Bracelet cuir Horween. Étanche 50m.",
+    "categorie": "Montres"
+  },
+  {
+    "id": 4,
+    "titre": "Sneakers Velours Minuit",
+    "prix": 135.00,
+    "image": "https://via.placeholder.com/400x300/0d1117/ffffff?text=Sneakers+Velours",
+    "description": "Semelle en caoutchouc vulcanisé. Tige en velours côtelé premium. Intérieur en coton biologique. Une icône discrète pour les connaisseurs.",
+    "categorie": "Chaussures"
+  },
+  {
+    "id": 5,
+    "titre": "Pull Mérinos Alpin",
+    "prix": 98.50,
+    "image": "https://via.placeholder.com/400x300/3d2b1f/ffffff?text=Pull+Merinos",
+    "description": "100% laine mérinos extrafine australienne. Col rond, coupe droite, coutures plates. Doux, chaud, respirant. Lavable en machine à froid.",
+    "categorie": "Vêtements"
+  },
+  {
+    "id": 6,
+    "titre": "Carnet Cuir Vénitien",
+    "prix": 42.00,
+    "image": "https://via.placeholder.com/400x300/5c3d11/ffffff?text=Carnet+Cuir",
+    "description": "Couverture en cuir marron gravé à Venise. 192 pages de papier ivoire 90g/m². Élastique de fermeture, marque-page en soie, pochette intérieure.",
+    "categorie": "Accessoires"
+  },
+  {
+    "id": 7,
+    "titre": "Parfum Bois Noir Édition",
+    "prix": 310.00,
+    "image": "https://via.placeholder.com/400x300/1c1c1c/ffffff?text=Parfum+Bois+Noir",
+    "description": "Notes de tête : poivre noir, cardamome. Notes de cœur : oud, rose centifolia. Notes de fond : vétiver, ambre gris, musc blanc. 50ml.",
+    "categorie": "Beauté"
+  },
+  {
+    "id": 8,
+    "titre": "Ceinture Tressée Artisanale",
+    "prix": 75.00,
+    "image": "https://via.placeholder.com/400x300/4a3728/ffffff?text=Ceinture+Tressée",
+    "description": "Cuir végétal tanné tressé à la main. Boucle en laiton massif. Réglable de 70 à 110 cm. Vieillit avec grâce. Livraison dans une boîte cadeau.",
+    "categorie": "Accessoires"
+  }
+]

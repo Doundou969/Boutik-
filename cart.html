@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon panier — Boutique</title>
+  <meta name="description" content="Consultez votre panier, ajustez les quantités et passez votre commande.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Boutique — Accueil">Bou<span>tique</span></a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="cart.html">Panier</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Voir le panier">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Panier
+          <span class="cart-count hidden" id="cart-count" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Mon panier</span>
+    </nav>
+
+    <h1 class="cart-page-title">Mon <em style="font-style:italic;font-family:var(--font-display);color:var(--gold)">panier</em></h1>
+    <p class="cart-page-subtitle" id="cart-subtitle">Chargement…</p>
+
+    <!-- CART CONTENT — injected by app.js -->
+    <div id="cart-container" aria-live="polite">
+      <!-- Skeleton -->
+      <div class="cart-layout">
+        <div class="cart-items">
+          <div class="cart-item" style="pointer-events:none">
+            <div class="cart-item-image skeleton" style="height:80px"></div>
+            <div class="cart-item-body" style="gap:10px">
+              <div class="skeleton" style="height:12px;width:40%"></div>
+              <div class="skeleton" style="height:18px;width:70%"></div>
+              <div class="skeleton" style="height:30px;width:60%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-summary skeleton" style="height:280px"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="logo">Bou<span>tique</span></p>
+          <p>Une sélection rigoureuse de pièces mode et accessoires pour ceux qui refusent le superflu.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="cart.html">Mon panier</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="#">Livraison & retours</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Boutique. Tous droits réservés.</p>
+        <p style="font-size:0.72rem;color:var(--stone)">Fait avec soin ✦</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Update subtitle after cart loads
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const sub = document.getElementById('cart-subtitle');
+        if (sub) {
+          const n = Cart.items.length;
+          sub.textContent = n === 0 ? 'Aucun article' : `${Cart.count} article${Cart.count > 1 ? 's' : ''} dans votre panier`;
+        }
+      }, 50);
+    });
+  </script>
+</body>
+</html>
